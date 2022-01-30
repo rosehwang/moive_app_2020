@@ -1,17 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './App';//App 컴포넌트 임포트
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ 
+    <App />//App 컴포넌트 임포트
+           //여러 컴포넌트를 입력한다면 '인접한 JSX요소는 반드시 하나의 태그로 감싸야 합니다' 메시지가 출력됨.
+  ,
   document.getElementById('root')
+  //ID가 root인 App컴포넌트를 그린다고 생각하면됨.
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
